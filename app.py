@@ -405,7 +405,7 @@ def page_analytics(df, importances, metrics, X_test, y_test, y_pred):
         fig = px.scatter(
             df, x="GrLivArea", y="SalePrice",
             color="OverallQual", color_continuous_scale="Turbo",
-            opacity=0.6, trendline="ols", template="plotly_white",
+            opacity=0.6, template="plotly_white",
         )
         fig.update_layout(
             xaxis_title="Above-Grade Living Area (sq ft)",
